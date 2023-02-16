@@ -10,13 +10,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -34,7 +37,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HeroFormComponent
   ],
   bootstrap: [ AppComponent ]
 })
